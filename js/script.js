@@ -1,6 +1,6 @@
 const menu = document.querySelector(".menu");
-
-let hamburguer = document.querySelector(".hamburguer");
+const hamburguer = document.querySelector(".hamburguer");
+const link = document.querySelectorAll(".link");
 
 hamburguer.addEventListener("click", () => {
     if (!menu.classList.contains("active")) {
@@ -10,6 +10,13 @@ hamburguer.addEventListener("click", () => {
         menu.classList.remove("active");
         hamburguer.innerHTML = "&#9776;";
     }
+});
+
+link.forEach((item) => {
+    item.addEventListener("click", () => {
+        hamburguer.innerHTML = "&#9776;";
+        menu.classList.remove("active");
+    });
 });
 
 let buttonSearch = document.querySelectorAll(".tab").forEach((item) => {
@@ -30,3 +37,14 @@ let heartButton = document.querySelectorAll(".heart-button").forEach((item) => {
         }
     });
 });
+
+let listingArticle = document
+    .querySelectorAll(".featured-listing--article.hidden")
+    .forEach((item) => {
+        const button = document.querySelector(".load-more-btn");
+
+        button.addEventListener("click", () => {
+            button.classList.add("hidden");
+            item.classList.remove("hidden");
+        });
+    });
