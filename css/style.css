@@ -297,6 +297,7 @@ custom-select {
 
 .load-more-btn {
     padding: 10px 30px;
+    margin-bottom: 20px;
     background-color: var(--color-red);
     color: var(--color-white);
     border: none;
