@@ -12,12 +12,12 @@
 <body>
 
     <header>
-        <div class="assets-phone">
+    <div class="header-container">
+        
+        <div class="logo">
             <img src="assets/images/logo 1.svg" alt="logo img" id="logo-img">
-            <div class="buttons-header">
-                <button class="hamburguer">&#9776;</button>
-                <button>+ Post Listing</button>
-            </div>
+
+            
         </div>
 
         
@@ -28,16 +28,32 @@
                 <li><a href="#" class="link">Categories</a></li>
                 <li><a href="#" class="link">About Us</a></li>
                 <li><a href="#" class="link">Contact</a></li>
+                <li><a href="#" class="link">Blog</a></li>
             </ul>
         </nav>
-    </header>
+
+        
+        <div class="header-buttons">
+            <button class="hamburguer">&#9776;</button>
+            <a href="#" class="signin">👤Sign In</a>
+            <button class="post-listing">+ Post Listing</button>
+        </div>
+        
+    </div>
+</header>
+
 
     <section class="search-section">
         <div class="main-text--search-section">
-            <h2>Discover Your</h2>
-            <h1>Perfect Rental</h1>
-
-            <p>Rent Cars, Houses, and Items in Just a Few Clicks</p>
+            <div>
+                <h2>Discover Your</h2>
+                <h1>Perfect Rental</h1> 
+            </div>
+            
+            
+              <p>Rent Cars, Houses, and Items in Just a Few Clicks</p>  
+            </div>
+            
         </div>
         
         <div class="inputs--search-section">
@@ -61,12 +77,13 @@
 
     </section>
 
-    <main>
+    <main> 
+        <div class="title-sections">
+            <h1>Browse From Top Categories</h1>
+            <img src="assets/images/red-line.png" alt="">
+        </div>
         <section class="top-categories--section">
-            <div class="title-sections">
-                <h1>Browse From Top Categories</h1>
-                <img src="assets/images/red-line.png" alt="">
-            </div>
+           
         
                 <a href="#"><img src="assets/images/like.png" alt=""> Holiday Rentals</a>
                 <a href="#"><img src="assets/images/house.png" alt="">Residential Spaces</a>
@@ -75,17 +92,14 @@
                 <a href="#"><img src="assets/images/three-points.png" alt="">More</a>
     
         </section>
-
-        <section class="featured-listing--section">
             <div class="title-sections">
                 <h1>Featured Listings</h1>
                 <img src="assets/images/red-line.png" alt="">
             </div>
+        <section class="featured-listing--section">
+            
 
             <article class="featured-listing--article">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/villa.png" alt="">
                     <div class="information-article-featured">
@@ -108,9 +122,6 @@
             </article>
 
             <article class="featured-listing--article">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/mansion-2.png" alt="">
                     <div class="information-article-featured">
@@ -133,9 +144,6 @@
             </article>
 
             <article class="featured-listing--article">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/mansion.png" alt="">
                     <div class="information-article-featured">
@@ -158,9 +166,6 @@
             </article>
 
             <article class="featured-listing--article hidden">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/villa.png" alt="">
                     <div class="information-article-featured">
@@ -183,9 +188,6 @@
             </article>
 
             <article class="featured-listing--article hidden">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/mansion-2.png" alt="">
                     <div class="information-article-featured">
@@ -208,9 +210,6 @@
             </article>
 
             <article class="featured-listing--article hidden">
-                <div class="for-rent-div">
-                    For Rent
-                </div>
                 <div class="presentation-article-featured">
                     <img src="assets/images/mansion.png" alt="">
                     <div class="information-article-featured">
@@ -232,13 +231,16 @@
                 </div>
             </article>
 
+            
+            
+        </section>
+        
             <div class="load-more-div">
                 <button class="load-more-btn">Load More</button>
             </div>
-            
-        </section>
 
         <section class="perfomance-section">
+            <h1 id="perfomance-text">Insights and Performance Metrics</h1>
             <article class="perfomance-article">
                 <h1>5000+</h1>
                 <p>Total Listings in the System</p>
@@ -253,59 +255,63 @@
             </article>
         </section>
 
-        <section class="featured-locations">
             <div class="title-sections">
                 <h1>Featured Locations</h1>
                 <img src="assets/images/red-line.png" alt="">
             </div>
 
-            <div class="img--featured-location">
+        <section class="featured-locations">
+
+            <div class="img--featured-location img1">
                 <img src="assets/images/kandy.png" alt="">
                 <h1>Kandy</h1>
             </div>
 
-            <div class="img--featured-location">
+            <div class="img--featured-location img2">
                 <img src="assets/images/anuradhapura.png" alt="">
                 <h1>Anuradhapura</h1>
             </div>
 
-            <div class="img--featured-location">
+            <div class="img--featured-location img3">
                 <img src="assets/images/gampaha.png" alt="">
                 <h1>Gampaha</h1>
             </div>
 
-            <div class="img--featured-location">
+            <div class="img--featured-location img4">
                 <img src="assets/images/badulla.png" alt="">
                 <h1>Badulla</h1>
             </div>
 
-            <div class="img--featured-location">
+            <div class="img--featured-location img5">
                 <img src="assets/images/jaffna.png" alt="">
                 <h1>Galle</h1>
             </div>
 
-            <div class="img--featured-location">
+            <div class="img--featured-location img6">
                 <img src="assets/images/colombo.png" alt="Colombo">
                 <h1>Colombo</h1>
             </div>
         </section>
 
-        <section class="notices">
             <div class="title-sections">
-                <h1>Featured Locations</h1>
+                <h1>Important Articles</h1>
                 <img src="assets/images/red-line.png" alt="">
             </div>
 
+        <section class="notices">
+            
             <article class="notices-article">
+
                 <img src="assets/images/city.svg" alt="">
                 <div class="notices-texts">
                     <span>May 7, 2023</span>
                     <h1>Car Rental Hacks for a Smooth Journey</h1>
                     <p>Learn insider tips for getting the best deals and making the most of your rental car experience.</p>
                 </div>
+
             </article>
 
-                    <article class="notices-article">
+            <article class="notices-article">
                 <img src="assets/images/desk.svg" alt="">
                 <div class="notices-texts">
                     <span>May 7, 2023</span>
@@ -314,7 +320,7 @@
                 </div>
             </article>
 
-                    <article class="notices-article">
+            <article class="notices-article">
                 <img src="assets/images/park.svg" alt="">
                 <div class="notices-texts">
                     <span>May 7, 2023</span>
@@ -323,7 +329,7 @@
                 </div>
             </article>
 
-                    <article class="notices-article">
+            <article class="notices-article">
                 <img src="assets/images/post-it.png" alt="">
                 <div class="notices-texts">
                     <span>May 7, 2023</span>
@@ -336,47 +342,63 @@
     </main>
 
     <footer>
-        <img src="assets/images/logo 1.svg" alt="">
-        <p>Sri Lanka's first & largest platform designed to create an online marketplace exclusively for RENT</p>
+        <div class="footer-div">
+            <img src="assets/images/logo 1.svg" alt="">
+            <p>Sri Lanka's first & largest platform designed to create an online marketplace exclusively for RENT</p>
 
-        <div class="social-div">
+            <div class="footer-div social-div">
             <a href="#"><img src="assets/images/instagram.png" alt=""></a>
             <a href="#"><img src="assets/images/twitter.png" alt=""></a>
             <a href="#"><img src="assets/images/youtube.png" alt=""></a>
             <a href="#"><img src="assets/images/facebook.png" alt=""></a>
             <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
         </div>
+        </div>
+        
 
-        <span>Navigation</span>
+        
 
-        <a href="#">About Us</a>
-        <a href="#">Blog</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
+        <div class="footer-div">
+            <span>Navigation</span>
 
-        <span>Featured Locations</span>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
 
-        <a href="#">Kandy</a>
-        <a href="#">Anuradhapura</a>
-        <a href="#">Badulla</a>
-        <a href="#">Colombo</a>
-        <a href="#">Kaluthara</a>
+        <div class="footer-div">
+            <span>Featured Locations</span>
 
-        <span>Help</span>
+            <a href="#">Kandy</a>
+            <a href="#">Anuradhapura</a>
+            <a href="#">Badulla</a>
+            <a href="#">Colombo</a>
+            <a href="#">Kaluthara</a>
+        </div>
 
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
+        <div class="footer-div">
+            <span>Help</span>
 
-        <span>Subscribe to Our Newsletter</span>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
 
-        <p>Stay updated with the latest listings and rental tips.</p>
+        
+        </div>
+        
+        <div class="footer-div">
 
-        <input type="email" name="" id="" placeholder="Email Address">
-        <input type="submit" name="" id="" value="Subscribe">
+            <span>Subscribe to Our Newsletter</span>
+            <p>Stay updated with the latest listings and rental tips.</p>
+
+            <input type="email" name="" id="" placeholder="Email Address">
+            <input type="submit" name="" id="" value="Subscribe">
+        </div>
+        
     </footer>
     
     <div class="copyright">
-    © Copyright 2024, Developed by DarwinGAZ
+    © Developed by DarwinGAZ
     </div>
 
     <script src="js/script.js"></script>

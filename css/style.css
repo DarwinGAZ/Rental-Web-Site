@@ -10,13 +10,21 @@
     font-family: "Plus Jakarta Sans";
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .title-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     gap: 10px;
-    font-size: 17px;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
@@ -31,9 +39,29 @@
 }
 
 #logo-img {
-    width: 30%;
-    max-width: 150px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .menu {
@@ -79,7 +107,11 @@
     margin: 10px;
 }
 
-.buttons-header button:last-child {
+.signin {
+    display: none;
+}
+
+.post-listing {
     background-color: var(--color-red);
     color: var(--color-white);
     border: none;
@@ -117,8 +149,7 @@
     padding: 20px;
 }
 
-.search-input--div input,
-custom-select {
+.search-input--div input {
     padding: 20px;
     border: none;
     border-radius: 30px;
@@ -172,7 +203,7 @@ custom-select {
     align-items: center;
     gap: 20px;
     border-radius: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.158);
     margin: 5px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -311,6 +342,10 @@ custom-select {
     margin: 10px;
 }
 
+.perfomance-section h1 {
+    display: none;
+}
+
 .perfomance-article {
     display: flex;
     flex-direction: column;
@@ -420,6 +455,27 @@ footer span {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-div .social-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-div .social-div img {
+    width: 90%;
+    height: auto;
 }
 
 footer input {
