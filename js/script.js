@@ -48,3 +48,23 @@ let listingArticle = document
             item.classList.remove("hidden");
         });
     });
+
+
+    const slider = document.querySelector('.featured-locations');
+
+
+slider.innerHTML += slider.innerHTML;
+
+let scrollSpeed = 0.5; 
+let position = 0;
+
+function autoSlide() {
+    position += scrollSpeed;
+    if (position >= slider.scrollWidth / 2) {
+        position = 0; 
+    }
+    slider.scrollLeft = position;
+    requestAnimationFrame(autoSlide);
+}
+
+autoSlide();

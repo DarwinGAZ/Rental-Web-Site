@@ -65,7 +65,6 @@
         color: var(--color-red);
     }
 
-    /* Botões à direita */
     .header-buttons {
         display: flex;
         gap: 15px;
@@ -95,6 +94,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        white-space: nowrap;
     }
 
     .main-text--search-section div {
@@ -173,7 +173,7 @@
 
     .perfomance-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -190,40 +190,22 @@
     }
 
     .featured-locations {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        gap: 20px;
+        width: 100%;
     }
 
     .img--featured-location {
-        overflow: hidden;
-        border-radius: 8px;
+        margin: 0px 80px;
+        width: 200px;
     }
 
     .img--featured-location img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .img1 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    .img1 img {
-        max-height: 100%;
-        height: 600px;
-    }
-
-    .img4 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 4;
-    }
-
-    .img4 img {
-        max-height: 100%;
-        height: 600px;
+        height: auto;
+        border-radius: 8px;
     }
 
     .notices {
@@ -261,8 +243,132 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .assets-phone {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 10px;
+        background-color: white;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #logo-img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 1000;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menu {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        visibility: hidden;
+        position: fixed;
+        display: flex;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu li {
+        list-style: none;
+        padding: 6px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .hamburguer {
+        display: block;
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    .signin {
+        display: none;
+    }
+
+    .top-categories--section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .main-text--search-section div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfomance-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-div .social-div a {
+        width: 25px;
+        height: auto;
+    }
+}
+
 @media (min-width: 1024px) {
     .notices {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-listing--section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .perfomance-section > h1 {
+        display: inline-block;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 15px;
+        width: 30%;
     }
 }
