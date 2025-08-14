@@ -157,7 +157,7 @@
 
     .featured-listing--section {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 90%;
         margin: 0 auto;
     }
@@ -173,33 +173,25 @@
 
     .perfomance-section {
         display: flex;
-        flex-direction: row;
-
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .perfomance-section * {
-        margin: 5px;
-    }
-
     .perfomance-section h1 {
-        display: block;
+        display: inline-block;
         font-size: 2.4rem;
         font-weight: bold;
         padding: 15px;
     }
 
     .perfomance-article {
-        padding: 40px;
+        padding: 60px 20px;
     }
 
     .featured-locations {
         display: grid;
-        grid-template-columns: repeat(4, minmax(200px, 290px));
-        gap: 20px;
-        justify-content: center;
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .img--featured-location {
@@ -266,5 +258,11 @@
     .footer-div input {
         margin: 0;
         padding: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .notices {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

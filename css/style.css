@@ -339,11 +339,10 @@ header {
 .perfomance-section {
     background-color: rgba(0, 0, 0, 0.096);
     padding: 20px;
-    margin: 10px;
 }
 
 .perfomance-section h1 {
-    display: none;
+    text-align: center;
 }
 
 .perfomance-article {
