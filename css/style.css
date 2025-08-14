@@ -426,6 +426,7 @@ header {
 .notices-texts p {
     padding-bottom: 60px;
     color: rgba(0, 0, 0, 0.5);
+    width: 90%;
 }
 
 footer {
