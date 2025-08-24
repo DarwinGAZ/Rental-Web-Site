@@ -344,13 +344,22 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    footer {
+        gap: 0px;
+        margin: 0;
+    }
+
+    footer * {
+        width: 90%;
+    }
+
     .footer-div img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
     .footer-div .social-div a {
-        width: 25px;
+        width: 30px;
         height: auto;
     }
 }
